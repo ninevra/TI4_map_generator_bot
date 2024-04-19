@@ -46,6 +46,7 @@ public class PlanetModel implements ModelInterface, EmbeddableModel {
     @JsonIgnore
     public boolean isValid() {
         return getId() != null
+            && planetType != null
             && name != null;
     }
 
